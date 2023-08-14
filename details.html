@@ -1,0 +1,120 @@
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Detail page</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  >
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<header class="buy-ticket-header">
+  <div class="buy-ticket-container">
+    <h1>Buy Ticket</h1>
+    <h1>When are you coming?</h1>
+  </div>
+</header>
+<nav class="progress-bar">
+  <ul>
+    <li class="step tickets">Tickets</li>
+    <li class="step details" style="color: red;">    >Details</li>
+    <li class="step payment">    >Payment</li>
+    <li class="step confirmation">    >Confirmation</li>
+  </ul>
+</nav>
+
+
+</head>
+<body>
+    
+  <div class="calendar-container">
+    <div class="calendar">
+      
+    </div>
+    <div class="selected-date-container">
+      <h2>Details</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <td id="display-selected-date"></td>
+        </tr>
+        <tr>
+          <th>Time</th>
+          <td id="result"></td>
+        </tr>
+        <tr>
+          <th>Tickets</th>
+          <td id="ticketPrices">
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+
+ 
+   
+
+
+
+  <form>
+    <div class="input-wrapper">
+      <input type="text" id="fullNameInput" class="common-input" placeholder="Enter full name">
+      <span id="fullNameError" class="error-message"></span>
+    </div>
+    
+    <div class="input-wrapper">
+      <input type="tel" id="phone" class="common-input" name="phone" placeholder="Enter phone number">
+      <span id="phoneError" class="error-message"></span>
+    </div>
+    
+    <div class="input-wrapper">
+      <input type="email" id="emailInput" class="common-input" placeholder="Enter email">
+      <span id="emailError" class="error-message"></span>
+    </div>
+    
+    <div class="input-wrapper">
+      <input type="email" id="confirmEmailInput" class="common-input" placeholder="Confirm email">
+      <span id="confirmEmailError" class="error-message"></span>
+    </div>
+
+    <select id="genderSelect" class="common-input">
+     
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      
+    </select>
+  </form>
+  <button id="submitButton" disabled>Save and Redirect</button>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+  
+
+<script src="book.js" ></script>
+
+</body>
+</html>
+
+
+
+
+
+
+   

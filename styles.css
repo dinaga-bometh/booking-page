@@ -1,0 +1,1035 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+
+header .logo img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-bottom: 10px;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+header nav ul li a:hover {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.2);
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.7);
+  color: #f1f1f1;
+  padding: 100px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.first-paragraph {
+  margin-top: 70px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.second-paragraph {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#imageContainer {
+  position: static;
+  width: 100%;
+  height: 100%;
+  animation: changeImage 20s infinite;
+  background-size: cover;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url(imgmp4/image1.jpeg);
+  }
+  50% {
+    background-image: url(imgmp4/image2.jpg);
+  }
+  100% {
+    background-image: url(imgmp4/image3.jpeg);
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  max-height: 300px;
+  transition: opacity 0.3s ease;
+}
+
+.image img:hover {
+  opacity: 0.7;
+}
+
+#image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.image-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.image-card:nth-child(3n+1) {
+  width: calc(33.33% - 10px);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.image-description {
+  margin-left: 10px;
+  text-align: center;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  animation: slideIn 1s ease-in-out;
+}
+
+.image-card img {
+  width: 200px;
+  height: 200px;
+  transition: opacity 0.3s ease;
+}
+
+.image-card img:hover {
+  opacity: 0.7;
+}
+
+#care {
+  margin-bottom: 40px;
+}
+
+#care h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 24px;
+  color: green;
+}
+
+#care .second-paragraph {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: green;
+}
+
+#care ul {
+  margin-left: 80px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: green;
+}
+
+#care li {
+  margin-bottom: 10px;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+    padding: 50px 0;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    font-size: 16px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-card {
+    width: calc(50% - 20px);
+  }
+
+  .image-card:nth-child(2n+1) {
+    width: calc(50% - 10px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    font-size: 14px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-card {
+    width: calc(100% - 20px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  width:100%;
+}
+
+
+
+
+header .logo img{
+    width:20%;
+    height:20%;
+    float:left;
+    margin-left: 10%;
+    margin-right:-30%;
+    margin-top: 2%;
+} 
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:45%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.donation-card {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.save-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .save-button:hover {
+      background-color: #45a049;
+    }
+
+
+     table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+/* Add this to your existing CSS */
+.buy-ticket-header {
+  background-color: green;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.wrapper {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+header .icons span:hover {
+  background: #f2f2f2;
+}
+
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+    header .current-date{
+      font-size: 1.45rem;
+      font-weight: 500;
+    }
+    .calendar{
+      padding: 20px;
+    }
+    .calendar ul{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      text-align: center;
+    }
+    .calendar .days{
+      margin-bottom: 20px;
+    }
+    .calendar li{
+      color: #333;
+      width: calc(100% / 7);
+      font-size: 1.07rem;
+    }
+    .calendar .weeks li{
+      font-weight: 500;
+      cursor: default;
+    }
+    .calendar .days li{
+      z-index: 1;
+      cursor: pointer;
+      position: relative;
+      margin-top: 30px;
+    }
+    .days li.inactive{
+      color: #aaa;
+    }
+    .days li.active{
+      color: #fff;
+    }
+    .days li::before{
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      height: 40px;
+      width: 40px;
+      z-index: -1;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .days li.active::before{
+      background: #9B59B6;
+    }
+    .days li:not(.active):hover::before{
+      background: #f2f2f2;
+    }
+
+
+
+
+
+
+    /* Your existing CSS styles for the calendar */
+/* ... */
+
+/* New CSS styles for the selected date container and table */
+.selected-date-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+/* CSS for button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* CSS for button container */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+label {
+  margin: 0;
+}
+
+
+
+
+/* Style for the custom-colored options */
+option.custom-color {
+  content: '\25CF'; /* Unicode for a filled circle */
+  margin-right: 5px;
+  color:red; /* Change the color to your desired one */
+}
+
+/* Remove the default indicator for select elements */
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Add custom styles for the select element */
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Your existing CSS rules */
+/* ... */
+
+/* Add this to your existing CSS */
+.buy-ticket-header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style for the calendar container */
+.calendar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Style for the calendar */
+.calendar {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the selected date container */
+.selected-date-container {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+/* Style for the details heading */
+.selected-date-container h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Style for the details table */
+.selected-date-container table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+/* Style for table headers */
+.selected-date-container th {
+  text-align: left;
+  padding: 5px 0;
+  font-weight: normal;
+}
+
+/* Style for table data cells */
+.selected-date-container td {
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+/* Your existing CSS rules */
+/* ... */
+
+
+
+/* Common Styles */
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.2);
+}
+
+h2 {
+  margin-top: 30px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* Header Styles */
+
+.header {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  font-size: 24px;
+}
+
+.icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+.icons span:hover {
+  background: #f2f2f2;
+}
+
+.current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Container for the Form */
+
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Common Input Styles */
+
+.common-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Error Message Style */
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Submit Button Styles */
+
+#submitButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 24px;
+    padding: 50px 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .common-input {
+    font-size: 14px;
+  }
+
+  #submitButton {
+    font-size: 16px;
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .common-input {
+    font-size: 12px;
+  }
+
+  #submitButton {
+    font-size: 14px;
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+/* Add your remaining styles below this point */
+
+/* ... */
+/* Common Styles */
+
+/* ... Your existing CSS rules ... */
+
+/* Book Tickets Button Styles */
+
+/* Common Styles */
+
+/* ... Your existing CSS rules ... */
+
+/* Book Tickets Link Button Styles */
+
+/* Common Styles */
+
+/* ... Your existing CSS rules ... */
+
+/* Book Tickets Button Styles */
+
+#book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#book-button:hover {
+  background-color: #45a049;
+}
+
+/* Add your remaining styles below this point */
+
+/* ... */
+
+/* Progress Bar Styles */
+
+.progress-bar {
+  background-color: #f2f2f2;
+}
+
+.progress-bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.progress-bar li {
+  text-align: center;
+  flex: 1;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+/* Style for the selected date container */
+.selected-date-container {
+  /* ... Other styles ... */
+  width: 25%; /* Adjust the width as needed */
+}
+
+/* Style for the details table */
+.selected-date-container table {
+  width: 100%; /* Make the table width 100% of its container */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Style for table headers */
+.selected-date-container th {
+  text-align: left;
+  padding: 5px 0;
+  font-weight: normal;
+}
+
+/* Style for table data cells */
+.selected-date-container td {
+  padding: 5px 0;
+  font-weight: bold;
+}

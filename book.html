@@ -1,0 +1,270 @@
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Booking page</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="book.js" defer></script>
+</head>
+
+
+  <body onload="disableContinueButton()">
+
+    <header class="buy-ticket-header">
+      <div class="buy-ticket-container">
+        <h1>Buy Ticket</h1>
+        <h1>When are you coming?</h1>
+      </div>
+    </header>
+    <nav class="progress-bar">
+      <ul>
+        <li class="step tickets" style="color: red;">Tickets</li>
+        <li class="step details">    >Details</li>
+        <li class="step payment">    >Payment</li>
+        <li class="step confirmation">    >Confirmation</li>
+      </ul>
+    </nav>
+
+
+  <div class="wrapper">
+    <header>
+      <p class="current-date"></p>
+      <div class="icons">
+        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+        <span id="next" class="material-symbols-rounded">chevron_right</span>
+      </div>
+    </header>
+
+    <div class="calendar">
+      <ul class="weeks">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+      </ul>
+      <ul class="days"></ul>
+    </div>
+  </div>
+
+  
+  <div class="table-responsive">
+    
+      
+    
+
+  <div class="calendar-container">
+    <div class="calendar">
+      
+    </div>
+    <div class="selected-date-container">
+      <h2>Details</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <td id="display-selected-date"></td>
+        </tr>
+        <tr>
+          <th>Time</th>
+          <td id="result"></td>
+        </tr>
+        <tr>
+          <th>Tickets</th>
+          <td id="ticketPrices">
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="info-list">
+    <table>
+      <tr>
+        <th>Person</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Adult</td>
+        <td>18+</td>
+      </tr>
+      <tr>
+        <td>Child</td>
+        <td>4-18</td>
+      </tr>
+    </table>
+    <div class="info-note">
+    </div>
+  </div>
+
+  <div class="pricing-list">
+    <h2>Pricing</h2>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Peak hour</th>
+        <th>Normal hour</th>
+      </tr>
+      <tr>
+        <td>Adult (Local)</td>
+        <td>$6</td>
+        <td>$4</td>
+      </tr>
+      <tr>
+        <td>Adult (Foreign)</td>
+        <td>$13</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td>Child (Local)</td>
+        <td>$3</td>
+        <td>$2</td>
+      </tr>
+      <tr>
+        <td>Child (Foreign)</td>
+        <td>$8</td>
+        <td>$5</td>
+      </tr>
+      <tr>
+        <td>Infant</td>
+        <td>Free</td>
+        <td>Free</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
+
+
+  <h2>Time Selection</h2>
+  <label for="timeSelect">Select Time Slots:</label>
+  <select id="timeSelect" multiple>
+      
+      <option value="7" selected>07:00 AM - 08:00 AM</option>
+      <option value="8">08:00 AM - 09:00 AM</option>
+      <option value="9">09:00 AM - 10:00 AM</option>
+      
+      <option value="10" class="peak">10:00 AM - 11:00 AM (peak)</option>
+      <option value="11" class="peak">11:00 AM - 12:00 PM (peak)</option>
+      <option value="12" class="peak">12:00 PM - 01:00 PM (peak)</option>
+      
+      <option value="13">01:00 PM - 02:00 PM</option>
+      <option value="14">02:00 PM - 03:00 PM</option>
+      
+      <option value="15" class="peak">03:00 PM - 04:00 PM (peak)</option>
+      <option value="16" class="peak">04:00 PM - 05:00 PM (peak)</option>
+      <option value="17" class="peak">05:00 PM - 06:00 PM (peak)</option>
+  </select>
+  <br>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>Number of Adults and Children</h1>
+  <div>
+    <label for="adults">Adults:</label>
+    <input type="number" id="adults" name="adults" min="0" max="10" value="0">
+
+    <button id="adultsIncrement">+</button>
+    <button id="adultsDecrement">-</button>
+  </div>
+
+  <div>
+    <label for="children">Children:</label>
+    <input type="number" id="children" name="children" min="0" max="10" value="0">
+
+    <button id="childrenIncrement">+</button>
+    <button id="childrenDecrement">-</button>
+  </div>
+
+  <div>
+    <label for="for_adults">Foreign Adults:</label>
+    <input type="number" id="for_adults" name="for_adults" min="0" max="10" value="1" >
+
+    <button id="forAdultsIncrement">+</button>
+    <button id="forAdultsDecrement">-</button>
+  </div>
+
+  <div>
+    <label for="for_children">Foreign Children:</label>
+    <input type="number" id="for_children" name="for_children" min="0" max="10" value="0">
+
+    <button id="forChildrenIncrement">+</button>
+    <button id="forChildrenDecrement">-</button>
+  </div>
+
+  <div>
+    <label for="infant">Infant:</label>
+    <input type="number" id="infant" name="infant" min="0" max="10" value="0">
+
+    <button id="infantIncrement">+</button>
+    <button id="infantDecrement">-</button>
+  </div>
+
+ 
+
+
+
+  
+ 
+ 
+  <div>
+    <button id="continueButton">Continue with Purchase</button>
+  </div>
+  
+
+
+ 
+
+  
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Purchase and Donate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="imageContainer">
+ <header class="bar">
+ <div class="logo">
+					<img src="imgmp4/logo.png">
+			</div>
+    <div class="container">
+      <h1>Purchase and Donate</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html" class="button">Home</a></li>
+           <li><a href="categories.html" class="button">Categories</a></li>
+          <li><a href="hikkaduwa.html" class="button">Hikkaduwa turtle hatchery</a></li>
+          <li><a href="threats.html" class="button">Threats to turtles</a></li>
+          
+           <li class="dropdown">
+                     <a href="#" class="dropbtn">Other Turtle Hatcheries</a>
+                      <div class="dropdown-content">
+                      <a href="kosgoda.html">Kosgoda</a>
+              <a href="benthota.html">Benthota</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <main>
+   <div id="image-gallery">
+    <div class="image-card">
+      
+    <section id="purchase-donate">
+      <h2>Purchase and Donate</h2>
+      <p class="intro-paragraph">You can make a difference in turtle conservation by supporting our efforts through purchases and donations. Here are some options:</p>
+
+      <div id="products">
+        <div class="product-item">
+          <img src="imgmp4/turtleshirt.jpeg" alt="T-Shirt">
+          <h3>Turtle T-Shirt</h3>
+          <p class="description">Show your love for turtles with our stylish turtle-themed t-shirts. Available in various sizes and colors.</p>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product-item">
+          <img src="imgmp4/mug.jpeg" alt="Mug">
+          <h3>Turtle Mug</h3>
+          <p class="description">Enjoy your favorite beverage while supporting turtle conservation. Our turtle-themed mugs are perfect for turtle enthusiasts.</p>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product-item">
+          <img src="imgmp4/donation.jpeg" alt="Donation">
+          <h3>Make a Donation</h3>
+          <p class="description">Support our turtle conservation efforts by making a donation. Every contribution counts in protecting these incredible creatures.</p>
+          <a href="#" class="button">Donate Now</a>
+        </div>
+      </div>
+
+     </div>
+</div>
+    </section>
+  </main>
+
+
+    <section id="donate">
+      <div class="donation-card">
+        <h2>Make a Donation</h2>
+        <form action="payment.php" method="post">
+          <div class="form-group">
+            <label for="amount">Donation Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter donation amount" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Cardholder Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter cardholder name" required>
+          </div>
+          <div class="form-group">
+            <label for="card">Card Number:</label>
+            <input type="text" id="card" name="card" placeholder="Enter card number" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+          </div>
+          <button type="submit" class="button">Donate Now</button>
+        </form>
+      </div>
+    </section>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>&copy; 2023 Turtle Website. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

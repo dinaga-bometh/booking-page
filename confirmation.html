@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation Page</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <header class="buy-ticket-header">
+    <div class="buy-ticket-container">
+      <h1>Buy Ticket</h1>
+      <h1>When are you coming?</h1>
+    </div>
+  </header>
+  <nav class="progress-bar">
+    <ul>
+      <li class="step tickets">Tickets</li>
+      <li class="step details">    >Details</li>
+      <li class="step payment" >    >Payment</li>
+      <li class="step confirmation" style="color: red;">    >Confirmation</li>
+    </ul>
+  </nav>
+
+</head>
+<body>
+    <h1>Thank You for Ordering!</h1>
+    <p>Your order has been confirmed with us. You can show this confirmation at the entrance.</p>
+    
+    
+  <h1>Confirmation Details</h1>
+  <table>
+    <td id="display-duration"></td>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td id="display-name"></td>
+    </tr>
+    <tr>
+      <td>Selected Date</td>
+      <td id="display-selected-date"></td>
+    </tr>
+    <tr>
+      <td>Selected Time</td>
+      <td id="result"></td>
+    </tr>
+    <tr>
+        
+      <td>Mobile</td>
+      <td id="display-mobile"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td id="display-email"></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td id="display-gender"></td>
+    </tr>
+    <tr>
+      <td>Ticket Prices</td>
+      <td id="ticketPrices"></td>
+    </tr>
+  </table>
+  <script src="book.js" ></script>
+</body>
+</html>

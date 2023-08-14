@@ -1,0 +1,113 @@
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Payment page</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  >
+  <header class="buy-ticket-header">
+    <div class="buy-ticket-container">
+      <h1>Buy Ticket</h1>
+      <h1>When are you coming?</h1>
+    </div>
+  </header>
+  <nav class="progress-bar">
+    <ul>
+      <li class="step tickets">Tickets</li>
+      <li class="step details">    >Details</li>
+      <li class="step payment" style="color: red;">    >Payment</li>
+      <li class="step confirmation">    >Confirmation</li>
+    </ul>
+  </nav>
+
+
+</head>
+<body>
+    
+  <div class="calendar-container">
+    <div class="calendar">
+      
+    </div>
+    <div class="selected-date-container">
+      <h2>Details</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <td id="display-selected-date"></td>
+        </tr>
+        <tr>
+          <th>Time</th>
+          <td id="result"></td>
+        </tr>
+        <tr>
+          <th>Tickets</th>
+          <td id="ticketPrices">
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="payment-form-container">
+    <h1>Payment Form</h1>
+    <form id="paymentForm">
+      <div class="input-wrapper">
+        <input type="text" id="cardNumber" class="common-input" placeholder="Card Number">
+        <span id="cardNumberError" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <div class="input-wrapper">
+          <input type="text" id="expiryDate" class="common-input" placeholder="Expiry Date (MM/YY)">
+          <span id="expiryDateError" class="error-message"></span>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" id="cvc" class="common-input" placeholder="CVC/CVV">
+          <span id="cvcError" class="error-message"></span>
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <input type="text" id="nameOnCard" class="common-input" placeholder="Name on Card">
+        <span id="nameOnCardError" class="error-message"></span>
+      </div>
+      
+     
+      
+      
+      
+      
+
+    </form>
+  </div>
+  <p>Total Price for All Hours: <span id="totalPriceForAllHours">$0</span></p>
+  <a href="confirmation.html">
+    <button id="payButton" disabled>Pay</button>
+  </a>
+
+ 
+   
+<script src="book.js" ></script>
+
+</body>
+</html>
+
+
+
+
+
+
+   
